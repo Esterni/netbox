@@ -1285,6 +1285,7 @@ class CableTypeChoices(ChoiceSet):
     TYPE_DAC_PASSIVE = 'dac-passive'
     TYPE_MRJ21_TRUNK = 'mrj21-trunk'
     TYPE_COAXIAL = 'coaxial'
+    TYPE_1694A = '1694A'
     TYPE_MMF = 'mmf'
     TYPE_MMF_OM1 = 'mmf-om1'
     TYPE_MMF_OM2 = 'mmf-om2'
@@ -1299,7 +1300,7 @@ class CableTypeChoices(ChoiceSet):
 
     CHOICES = (
         (
-            'Copper', (
+            'Twisted Pair', (
                 (TYPE_CAT3, 'CAT3'),
                 (TYPE_CAT5, 'CAT5'),
                 (TYPE_CAT5E, 'CAT5e'),
@@ -1311,7 +1312,12 @@ class CableTypeChoices(ChoiceSet):
                 (TYPE_DAC_ACTIVE, 'Direct Attach Copper (Active)'),
                 (TYPE_DAC_PASSIVE, 'Direct Attach Copper (Passive)'),
                 (TYPE_MRJ21_TRUNK, 'MRJ21 Trunk'),
+            ),
+        ),
+        (
+            'Coaxial', (
                 (TYPE_COAXIAL, 'Coaxial'),
+                (TYPE_1694A, '1694A')
             ),
         ),
         (
