@@ -879,6 +879,8 @@ class InterfaceTypeChoices(ChoiceSet):
 
     # Coaxial
     TYPE_DOCSIS = 'docsis'
+    TYPE_BNC = 'bnc'
+    TYPE_HDBNC = 'hd-bnc'
 
     # PON
     TYPE_GPON = 'gpon'
@@ -1044,6 +1046,9 @@ class InterfaceTypeChoices(ChoiceSet):
             'Coaxial',
             (
                 (TYPE_DOCSIS, 'DOCSIS'),
+                (TYPE_BNC, 'BNC'),
+                (TYPE_HDBNC, 'HD-BNC (Micro)'),
+
             )
         ),
         (
@@ -1286,6 +1291,7 @@ class CableTypeChoices(ChoiceSet):
     TYPE_MRJ21_TRUNK = 'mrj21-trunk'
     TYPE_COAXIAL = 'coaxial'
     TYPE_1694A = '1694A'
+    TYPE_4855 = '4855'
     TYPE_MMF = 'mmf'
     TYPE_MMF_OM1 = 'mmf-om1'
     TYPE_MMF_OM2 = 'mmf-om2'
@@ -1317,7 +1323,8 @@ class CableTypeChoices(ChoiceSet):
         (
             'Coaxial', (
                 (TYPE_COAXIAL, 'Coaxial'),
-                (TYPE_1694A, '1694A')
+                (TYPE_1694A, '1694A'),
+                (TYPE_4855, '4855'),
             ),
         ),
         (
