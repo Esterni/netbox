@@ -1047,7 +1047,7 @@ class InterfaceTypeChoices(ChoiceSet):
             (
                 (TYPE_DOCSIS, 'DOCSIS'),
                 (TYPE_BNC, 'BNC'),
-                (TYPE_HDBNC, 'HD-BNC (Micro)'),
+                (TYPE_HDBNC, 'HDBNC'),
 
             )
         ),
@@ -1290,8 +1290,9 @@ class CableTypeChoices(ChoiceSet):
     TYPE_DAC_PASSIVE = 'dac-passive'
     TYPE_MRJ21_TRUNK = 'mrj21-trunk'
     TYPE_COAXIAL = 'coaxial'
-    TYPE_1694A = '1694A'
-    TYPE_4855 = '4855'
+    TYPE_3G_SDI = '3g-sdi'
+    TYPE_6G_SDI = '6g-sdi'
+    TYPE_12G_SDI = '12g-sdi'
     TYPE_MMF = 'mmf'
     TYPE_MMF_OM1 = 'mmf-om1'
     TYPE_MMF_OM2 = 'mmf-om2'
@@ -1323,8 +1324,9 @@ class CableTypeChoices(ChoiceSet):
         (
             'Coaxial', (
                 (TYPE_COAXIAL, 'Coaxial'),
-                (TYPE_1694A, '1694A'),
-                (TYPE_4855, '4855'),
+                (TYPE_3G_SDI, '3G SDI'),
+                (TYPE_6G_SDI, '6G SDI'),
+                (TYPE_12G_SDI, '12G SDI'),
             ),
         ),
         (
