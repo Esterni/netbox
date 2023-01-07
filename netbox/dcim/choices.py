@@ -881,6 +881,9 @@ class InterfaceTypeChoices(ChoiceSet):
     TYPE_DOCSIS = 'docsis'
     TYPE_BNC = 'bnc'
     TYPE_HDBNC = 'hd-bnc'
+    TYPE_DIN_1 = 'din-10'
+    TYPE_F = 'f'
+    TYPE_N = 'n'
 
     # PON
     TYPE_GPON = 'gpon'
@@ -1048,6 +1051,9 @@ class InterfaceTypeChoices(ChoiceSet):
                 (TYPE_DOCSIS, 'DOCSIS'),
                 (TYPE_BNC, 'BNC'),
                 (TYPE_HDBNC, 'HDBNC'),
+                (TYPE_DIN_1, 'DIN 1.0'),
+                (TYPE_F, 'F Connector'),
+                (TYPE_N, 'N Connector'),
 
             )
         ),
@@ -1290,9 +1296,10 @@ class CableTypeChoices(ChoiceSet):
     TYPE_DAC_PASSIVE = 'dac-passive'
     TYPE_MRJ21_TRUNK = 'mrj21-trunk'
     TYPE_COAXIAL = 'coaxial'
-    TYPE_3G_SDI = '3g-sdi'
-    TYPE_6G_SDI = '6g-sdi'
-    TYPE_12G_SDI = '12g-sdi'
+    TYPE_MINI_RG59= 'mini-rg59'
+    TYPE_RG59 = 'rg59'
+    TYPE_RG6 = 'rg6'
+    TYPE_RG11 = 'rg11'
     TYPE_MMF = 'mmf'
     TYPE_MMF_OM1 = 'mmf-om1'
     TYPE_MMF_OM2 = 'mmf-om2'
@@ -1324,9 +1331,10 @@ class CableTypeChoices(ChoiceSet):
         (
             'Coaxial', (
                 (TYPE_COAXIAL, 'Coaxial'),
-                (TYPE_3G_SDI, '3G SDI'),
-                (TYPE_6G_SDI, '6G SDI'),
-                (TYPE_12G_SDI, '12G SDI'),
+                (TYPE_RG6, 'RG6'),
+                (TYPE_RG11, 'RG11'),
+                (TYPE_RG59, 'RG59'),
+                (TYPE_MINI_RG59, 'Mini RG59'),
             ),
         ),
         (
