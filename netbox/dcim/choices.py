@@ -910,6 +910,7 @@ class InterfaceTypeChoices(ChoiceSet):
 
     # Other
     TYPE_OTHER = 'other'
+    TYPE_XLR = 'xlr'
 
     CHOICES = (
         (
@@ -1090,6 +1091,7 @@ class InterfaceTypeChoices(ChoiceSet):
             'Other',
             (
                 (TYPE_OTHER, 'Other'),
+                (TYPE_XLR, 'XLR'),
             )
         ),
     )
@@ -1300,6 +1302,7 @@ class CableTypeChoices(ChoiceSet):
     TYPE_RG59 = 'rg59'
     TYPE_RG6 = 'rg6'
     TYPE_RG11 = 'rg11'
+    TYPE_MICROPHONE = 'microphone'
     TYPE_MMF = 'mmf'
     TYPE_MMF_OM1 = 'mmf-om1'
     TYPE_MMF_OM2 = 'mmf-om2'
@@ -1351,7 +1354,12 @@ class CableTypeChoices(ChoiceSet):
                 (TYPE_AOC, 'Active Optical Cabling (AOC)'),
             ),
         ),
-        (TYPE_POWER, 'Power'),
+        (
+            'Other',(
+                (TYPE_POWER, 'Power'),
+                (TYPE_MICROPHONE, 'Microphone'),
+            ),
+        )
     )
 
 
